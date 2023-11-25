@@ -74,7 +74,7 @@ app.delete("/todo/:id", async (req, res) => {
 
 app.get("/", async (req, res) => {
   try {
-    res.json({ message: "this is a get response for homepage" });
+    res.json({ message: "You have reached the todo node api" });
   } catch (error) {
     console.log(error.message);
   }
