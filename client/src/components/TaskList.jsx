@@ -1,6 +1,5 @@
 import { TodoContext } from "../MyContext";
 import { useContext, useState, useEffect } from "react";
-import TaskEditWindow from "./TaskEditWindow";
 
 const TaskList = () => {
   const { tasks, setTask } = useContext(TodoContext);
