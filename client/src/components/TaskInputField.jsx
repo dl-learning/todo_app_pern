@@ -13,7 +13,7 @@ const TaskInputField = () => {
       if (task_desc === null || task_desc === "") {
         return;
       }
-      await fetch("http://localhost:8080/todo", {
+      await fetch("https://todo-api-4sx2.onrender.com/todo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

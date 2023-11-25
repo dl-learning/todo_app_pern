@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const getTaskList = async () => {
       try {
-        const res = await fetch("http://localhost:8080/todo");
+        const res = await fetch("https://todo-api-4sx2.onrender.com/todo");
         const data = await res.json();
         setTask(data);
       } catch (error) {

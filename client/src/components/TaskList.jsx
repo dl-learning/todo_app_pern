@@ -34,7 +34,7 @@ const TaskItem = (props) => {
     e.preventDefault();
     const id = task.id;
 
-    const res = await fetch(`http://localhost:8080/todo/${id}`, {
+    const res = await fetch(`https://todo-api-4sx2.onrender.com/todo/${id}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const TaskItem = (props) => {
   };
 
   const deleteTask = async (id) => {
-    const res = await fetch(`http://localhost:8080/todo/${id}`, {
+    const res = await fetch(`https://todo-api-4sx2.onrender.com/todo/${id}`, {
       method: "delete",
     });
     settaskChanged(!taskChanged);
@@ -59,7 +59,7 @@ const TaskItem = (props) => {
       console.log(
         `current value is ${isComplete} setting to ${!isComplete} for ${id}`
       );
-      const res = await fetch(`http://localhost:8080/todo/${id}`, {
+      const res = await fetch(`https://todo-api-4sx2.onrender.com/todo/${id}`, {
         method: "put",
         headers: {
           "Content-Type": "application/json",
